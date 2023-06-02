@@ -1,23 +1,70 @@
-header {
-    padding-top: 1px;
-    height: 305px;
-  
-    color: white;
-    background-color: #69bffc;
 
-    background-size: contain;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-  }
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    
   
-  .site-title {
-    margin: 0.5rem 0;
-  }
-  
-  .site-title a,
-  .site-title a:active,
-  .site-title a:visited {
-    color: white;
+
+ 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);                
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-  }
-  
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-logo span {
+    font-size: 30px;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+   
+    align-items: center;
+} 
+
+.header-nav a {
+    display: block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+} 
+
+.header-nav a:hover {
+    color: #999;
+}
+
+.header-nav a.active {
+    color: #999;
+}
+
+.header-nav a:last-child {
+    margin-right: 0;
+}
+

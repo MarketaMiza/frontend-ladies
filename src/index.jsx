@@ -1,24 +1,27 @@
 import React from "react";
-// import { Footer } from "./components/Footer";
-// import { Header } from "./components/Header";
-import { Home } from "./components/Home";
-import { RouterProvider, createBrowserRouter } from "react-router-dom"; 
-import { createRoot } from "react-dom";
+import { HomePage } from "./Pages/HomePage";
+import { Portfolio } from "./Pages/Portfolio";
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import "./index.css";
 
+export const App = () => {
+  return <Outlet />;
+};
 
 const router = createBrowserRouter([
-  {path: "/", element: <Home />},
-  // {path: "/about", element: <About />},
-])
+  {
+    path: "/",
+    element: <HomePage />,
+    children: [
+      {
+        path: "/Portfolio",
+        element: <Portfolio />,
+      },
+    ],
+  },
+]);
 
-export const App = () => (
-   <>
-  
-   <RouterProvider router={router}/>  
- 
-   </>
-  
-  );
- 
-
-  createRoot(document.querySelector('#app')).render(<App />, );
+createRoot(document.querySelector("#app")).render(
+  <RouterProvider router={router} />
+);
