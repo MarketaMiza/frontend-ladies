@@ -1,52 +1,33 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./style.css";
+import { Link } from 'react-router-dom';
+import './style.css'
+import Logo from "./img/logo.jpg"
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+    const [navOpen, setNavOpen] = useState(false)
+    const toggleNav = () => {
+        setNavOpen(!navOpen);
+    }
+    return (
+        <header className="header-container">
+            <div className="container">
+                <div className="site-logo_container">
+                    <img className="logo" src={Logo} alt="logo" />
 
-  return (
-    <header className="header-container">
-      <div className="header-logo">
-        <Link to="/">
-          <img src="/assets/logo.png" alt="logo" />
-        </Link>
-      </div>
-      <nav className="header-nav">
-        <ul className="header-nav-list">
-          <li className="header-nav-item">
-            <Link to="/Portfolio">Portfolia</Link>
-          </li>
-          <li className="header-nav-item">
-            <Link to="/About">O projektu</Link>
-          </li>
-          <li className="header-nav-item">
-            <Link to="/Contact">Kontakt</Link>
-          </li>
-        </ul>
-      </nav>
-      <button className="header-menu-button" onClick={toggleMenu}>
-        <img src="/assets/menu.svg" alt="menu" />
-      </button>
+                </div>
+                <div className="navigation">
+                    <button className="nav-btn" onClick={toggleNav}><i className="ri-menu-fill"></i></button>
+                    <div className={`rollout-nav ${!navOpen ? 'nav-closed' : ''}`}>
 
-      {isMenuOpen && (
-        <nav className="header-mobile-nav">
-          <ul className="header-mobile-nav-list">
-            <li className="header-mobile-nav-item">
-              <Link to="/About">About</Link>
-            </li>
+                        <Link to="/">Úvod</Link>
+                        <Link to="/about_project">O projektu</Link>
+                        <Link to="/about_team">Portfolia</Link>
+                        <Link to="/about_contact">Kontakt</Link>
 
-            <li className="header-mobile-nav-item">
-              <Link to="/Portfolio">Portfolio</Link>
-            </li>
+                    </div>
+                </div>
+            </div>
+        </header>
+    )
+}
 
-            <li className="header-mobile-nav-item">
-              <Link to="/Contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      )}
-    </header>
-  );
-};

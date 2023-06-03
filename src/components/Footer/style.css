@@ -30,9 +30,16 @@ footer {
   text-align: center;
 } 
 
-@media screen (max-width: 768px)  {
+@media (max-width: 768px)  {
   .footer-container {
     width: 100%;
   }   
 
+  .footer-title {
+    font-size: 100%;
+  }   
+
+  .footer-text {
+    font-size: 80%;
+  }
 }

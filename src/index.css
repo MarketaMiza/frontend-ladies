@@ -1,5 +1,6 @@
 /* normalize css */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Lobster&family=Rajdhani:wght@700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -21,9 +22,9 @@ html {
 
 body {
   color: #fff;
-  background: #000;
-  font-family: "Bebas Neue", sans-serif;
   font-family: "Fira Code", monospace;
+  font-family: "Lobster", cursive;
+  font-family: "Rajdhani", sans-serif;
   margin: 0;
 
   overflow: hidden;
@@ -38,7 +39,7 @@ strong {
 a {
   color: inherit;
   background-color: transparent;
-}
+} 
 
 img {
   border-style: none;
@@ -46,22 +47,22 @@ img {
   height: auto;
 }
 
-p {
+/* p {
   font-size: 1.25rem;
 
   font-weight: bold;
   margin: 1rem 0 0;
-  text-shadow: 1px 1px 0 black;
-}
+ 
+} */
 
-input,
+/* input,
 button {
   all: unset;
   color: black;
   font-size: inherit;
   font-family: inherit;
   line-height: 1;
-}
+} */
 
 button {
   cursor: pointer;
@@ -86,7 +87,7 @@ h3 {
 figure {
   margin: 0;
 }
-
+/* 
 .menu {
   margin: 0;
   padding-left: 0;
@@ -104,4 +105,4 @@ figure {
   padding: 0 1.25rem;
   max-width: 1170px;
   margin: 0 auto;
-}
+} */
