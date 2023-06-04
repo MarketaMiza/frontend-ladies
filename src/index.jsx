@@ -1,22 +1,37 @@
 import React from "react";
-import { HomePage } from "./Pages/HomePage";
-import { Portfolio } from "./Pages/Portfolio";
+
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
+import { HomePage } from "./Pages/HomePage";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { IndividualPortfolio } from "./Pages/Portfolios/IndividualPortfolio";
+
 export const App = () => {
-  return <Outlet />;
+  return (
+    <main className="main-box">
+      <Header />
+      <Outlet />
+      <Footer />
+    </main>
+  );
 };
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <App />,
     children: [
       {
-        path: "/Portfolio",
-        element: <Portfolio />,
+        index: true,
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/portfolio",
+        element: <IndividualPortfolio />,
       },
     ],
   },

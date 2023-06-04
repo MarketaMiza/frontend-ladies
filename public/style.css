@@ -28,6 +28,7 @@ body {
 
     overflow: hidden;
     overflow-y: auto;
+    background-color: pink;
 }
 
 h1,
@@ -46,29 +47,4 @@ h3 {
     
     font-size: clamp(1.75rem, 10vw, 3.5rem);
     line-height: 1;
-}
-
-figure {
-    margin: 0;
-}
-
-
-.menu {
-    margin: 0;
-    padding-left: 0;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.menu a {
-    text-decoration: none;
-}
-
-
-.container {
-    padding: 0 1.25rem;
-    max-width: 1170px;
-    margin: 0 auto;
 }

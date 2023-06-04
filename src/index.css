@@ -1,6 +1,49 @@
 /* normalize css */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Lobster&family=Rajdhani:wght@700&display=swap");
 
+/* colors, line heights a dalsi casto pouzivane, opakujici se nastaveni */
+
+:root {
+  --header-height: 3rem;
+
+  /* colors - hue, saturation, lightness */
+  --primary-color: #1e1d1d;
+  --primary-color-alt: #575757;
+  --linear-gradient: linear-gradient(
+    54deg,
+    rgba(45, 45, 45, 0.95) 34%,
+    rgba(45, 45, 45, 0.95)
+  );
+  
+  --title-color: #1b1a1a;
+  --text-color: #1f1d1d;
+  --text-color-alt: #999;
+  --bg-color: #fff;
+  --bg-color-alt: #e9ecef;
+  --border-color: #f1f1f1;
+
+  /* font family */
+  --fira-font: "Fira Code", "Lobster";
+  --mono-font-: monospace;
+
+  /* font size */
+  --fs-h1: 2.75rem;
+  --fs-h2: 1.75rem;
+  --fs-lg: 1.125rem;
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* font weight */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* margins bottom */
+  --mb-0-25: 0.25rem;
+}
+
 *,
 *::before,
 *::after {
@@ -23,23 +66,16 @@ html {
 body {
   color: #fff;
   font-family: "Fira Code", monospace;
-  font-family: "Lobster", cursive;
-  font-family: "Rajdhani", sans-serif;
   margin: 0;
-
   overflow: hidden;
   overflow-y: auto;
+  background-image: url(../img_main/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
 }
 
-b,
-strong {
-  font-weight: bolder;
-}
-
-a {
-  color: inherit;
-  background-color: transparent;
-} 
 
 img {
   border-style: none;
@@ -47,26 +83,6 @@ img {
   height: auto;
 }
 
-/* p {
-  font-size: 1.25rem;
-
-  font-weight: bold;
-  margin: 1rem 0 0;
- 
-} */
-
-/* input,
-button {
-  all: unset;
-  color: black;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: 1;
-} */
-
-button {
-  cursor: pointer;
-}
 
 h1,
 h2,
@@ -84,25 +100,12 @@ h3 {
   line-height: 1;
 }
 
+h4 {
+  font-size: clamp(1.1rem, 10vw, 2.5rem);
+  line-height: 1;
+}
+
 figure {
   margin: 0;
 }
-/* 
-.menu {
-  margin: 0;
-  padding-left: 0;
-}
 
-.menu li {
-  list-style: none;
-}
-
-.menu a {
-  text-decoration: none;
-}
-
-.container {
-  padding: 0 1.25rem;
-  max-width: 1170px;
-  margin: 0 auto;
-} */

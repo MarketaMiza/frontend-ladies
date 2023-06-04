@@ -1,0 +1,13 @@
+.individual-portfolio-container {
+    color: black;
+    display: grid;
+ 
+    width: 85%;
+    height: auto;
+    margin: 8rem auto;
+    padding: 0.5rem 0 0.5rem 0;
+    position: relative;
+    z-index: 1000;
+    border: 2px solid red;
+
+}

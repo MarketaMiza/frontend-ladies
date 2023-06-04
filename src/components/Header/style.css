@@ -2,40 +2,54 @@
 
 header {
   width: 100%;
+  height: auto;
+  font-family: var(--fira-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--fs-base);
+  color: var(--text-color);
+
+  margin: 0 auto;
+  padding: 0.5rem 0 0.5rem 0;
+
+  /* VYRESIT POZICOVANI AZ TOHO BUDE NA STRANCE VICE - ZATIM NEVIM JAK */
+  
+  /* position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000; */
+ 
+  border: 2px solid red;
 }
+
+.header-title {
+  font-size: clamp(1.75rem, 8vw, 2.5rem);
+  font-weight: var(--font-semi-bold);
+}
+
 .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: self-end;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%;
   height: 15vh;
   font-size: clamp(1rem, 5vw, 1.5rem);
   color: rgb(21, 21, 21);
   margin: 0 auto;
   padding: 0rem 0 0 0;
-  /* border: 1px solid rgb(15, 224, 36); */
 }
 
 .container {
-  width: auto;
+  width: 100%;
   display: grid;
   left: 1rem;
   top: 1.5rem;
-  /* border: 1px solid pink; */
 }
 
-/* LOGO / cat */
-.logo {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.site-logo_container {
-  position: absolute;
-  left: 1rem;
-  top: 1.5rem;
-  opacity: 0.8;
-  /* border: 1px solid rgb(20, 30, 177); */
+.header-title {
+  line-height: 1;
+  text-align: start;
+  margin: -15rem;
+  padding: 0;
 }
 
 /* NAVIGATION - menu */
@@ -70,14 +84,14 @@ header {
 
 .rollout-nav a {
   display: inline-block;
-  color: #0f0e0e;
+  color: var(--text-color);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
-  /* pri najeti lehce nadskoci */
-  /* transition: 0.5s; */
+
+  transition: 0.5s;
   line-height: 2rem;
   opacity: 0.5;
   margin: 0;
@@ -114,7 +128,7 @@ header {
   }
 
   .rollout-nav a:hover {
-    border-bottom: 2px solid #0d2dbe;
+    border-bottom: 1.75px solid #0d2dbe;
     background: none repeat scroll 0 0 transparent;
     cursor: pointer;
   }

@@ -1,0 +1,36 @@
+/* HOME PAGE */
+
+/* ARTICLE - about project */
+.article-box {
+  width: 80%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  border: 2px solid rgb(72, 255, 0);
+  color: var(--text-color);
+  position: inherit;
+  z-index: 1000;
+}
+
+/* nadpis O projektu... */
+.box-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* text o projektu */
+.text {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text p {
+  font-size: var(--font-size);
+  text-align: justify;
+  hyphens: none;
+}
+
+
