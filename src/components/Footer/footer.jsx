@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./footer.css";
 
 
 export const Footer = () => {
@@ -9,9 +9,9 @@ export const Footer = () => {
         Frontend Ladies, Czechitas Digitální akademie: Web
       </p>
       <p className="footer-text">© 2023 Markéta Mížová</p>
-       <p className="footer-link">Kontakt</p>
-
-      
+       <p className="footer-link">Kontakt
+       
+       </p>
     </footer>
   );
 };

@@ -4,10 +4,10 @@ import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
-import { HomePage } from "./Pages/HomePage";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { IndividualPortfolio } from "./Pages/Portfolios/IndividualPortfolio";
+import { HomePage } from "./Pages/HomePage/home";
+import { Header } from "./components/Header/header";
+import { Footer } from "./components/Footer/footer";
+import { IndividualPortfolio } from "./Pages/Portfolios/IndividualPortfolio/individual";
 
 export const App = () => {
   return (

@@ -1,0 +1,12 @@
+ .portfolio-box {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: var(--text-color);
+  position: inherit;
+  z-index: 1000;
+
+  /* border: 1px solid black;  */
+} 

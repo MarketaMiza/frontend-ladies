@@ -9,10 +9,11 @@
   flex-direction: column;
   margin: 0 auto;
 
-  border: 2px solid rgb(72, 255, 0);
+  /* border: 2px solid rgb(72, 255, 0); */
   color: var(--text-color);
   position: inherit;
   z-index: 1000;
+  line-height: 1.5;
 }
 
 /* nadpis O projektu... */
@@ -24,13 +25,18 @@
 /* text o projektu */
 .text {
   width: 100%;
-  margin: 0 auto;
+  height: auto;
 }
 
 .text p {
   font-size: var(--font-size);
   text-align: justify;
   hyphens: none;
+  margin-top: 20px;
+}
+
+strong {
+  color: #074ee8;
 }
 
 

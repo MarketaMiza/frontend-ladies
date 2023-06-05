@@ -6,20 +6,20 @@ header {
   font-family: var(--fira-font);
   font-weight: var(--font-semi-bold);
   font-size: var(--fs-base);
-  color: var(--text-color);
+  /* color: var(--text-color); */
 
   margin: 0 auto;
   padding: 0.5rem 0 0.5rem 0;
 
   /* VYRESIT POZICOVANI AZ TOHO BUDE NA STRANCE VICE - ZATIM NEVIM JAK */
-  
+
   /* position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1000; */
- 
-  border: 2px solid red;
+  /*  
+  border: 2px solid red; */
 }
 
 .header-title {
@@ -30,10 +30,10 @@ header {
 .header-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 85%;
+  width: 80%;
   height: 15vh;
   font-size: clamp(1rem, 5vw, 1.5rem);
-  color: rgb(21, 21, 21);
+  color: rgb(10, 10, 10);
   margin: 0 auto;
   padding: 0rem 0 0 0;
 }
@@ -44,6 +44,14 @@ header {
   left: 1rem;
   top: 1.5rem;
 }
+
+/* LOGO  */
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* nadpis frontend ladies */
 
 .header-title {
   line-height: 1;
@@ -84,16 +92,17 @@ header {
 
 .rollout-nav a {
   display: inline-block;
-  color: var(--text-color);
+  color: #171616;
+  /* color: var(--text-color); */
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.2rem;
+  /* text-transform: uppercase; */
+  font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
 
   transition: 0.5s;
   line-height: 2rem;
-  opacity: 0.5;
+  opacity: 0.8;
   margin: 0;
 }
 
@@ -128,7 +137,9 @@ header {
   }
 
   .rollout-nav a:hover {
-    border-bottom: 1.75px solid #0d2dbe;
+    border: 1.75px solid #bc31ea;
+    border-radius: 3px;
+    padding: 0.5rem;
     background: none repeat scroll 0 0 transparent;
     cursor: pointer;
   }

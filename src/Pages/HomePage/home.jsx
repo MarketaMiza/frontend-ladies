@@ -1,7 +1,6 @@
 import React from "react";
-import "./style.css";
-import { Portfolios } from "../Portfolios";
-
+import "./home.css";
+import { Portfolios } from "../Portfolios/portfolios";
 
 export const HomePage = () => {
   return (
@@ -26,7 +25,8 @@ export const HomePage = () => {
           </p>
         </div>
       </article>
-      <div className="portfolios-container">
+
+      <div className="portfolios-box">
         <Portfolios />
       </div>
     </>

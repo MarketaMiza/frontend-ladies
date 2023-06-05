@@ -6,45 +6,35 @@ footer {
   font-weight: var(--font-light);
   color: var(--text-color);
   margin: 0 auto;
-  padding: 0.5rem 0 0.5rem 0;
-  
+  /* padding: 0.5rem 0 0.5rem 0; */
+
   /* pozor na to, pokud tam bude vice textu / nastavit jinak */
   /* position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1000; */
-
-  /* smazat */
-  border: 2px solid red;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-
-  align-items: center;
-  justify-items: center;
-
-}
-
-/* LOGO / cat */
-.logo {
-  width: 2.5rem;
-  height: 2.5rem;
+   align-items: center;
+  justify-items: center; 
+  justify-content: space-between;
+  
 }
 
 /* Title - FL, CZechitas... */
-.footer-title {
+.footer-title,
+.footer-text,
+.footer-link {
+  /* align-items: space-between; */
   font-size: 100%;
-  text-align: center;
+ 
 }
 
-.footer-text {
-  font-size: 100%;
-  text-align: center;
-}
 
 @media (max-width: 768px) {
   .footer-container {
