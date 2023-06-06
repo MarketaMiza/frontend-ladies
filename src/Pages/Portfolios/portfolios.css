@@ -1,12 +1,13 @@
- .portfolio-box {
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.25rem;
+
+  margin: 0 auto;
+
   width: 80%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  color: var(--text-color);
-  position: inherit;
-  z-index: 1000;
-
+/* smazat pomocny border */
   /* border: 1px solid black;  */
-} 
+}
