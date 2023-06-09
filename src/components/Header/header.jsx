@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
-import Logo from "./img/logo_02.svg";
+import Logo from "../../assets/img/logo_02.svg";
 
 export const Header = () => {
   const [navOpen, setNavOpen] = useState(false);

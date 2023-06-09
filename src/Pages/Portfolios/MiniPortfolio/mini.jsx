@@ -4,7 +4,7 @@ import "./mini.css";
 import Photo from "./img/logo.jpg";
 
 export const MiniPortfolio = (props) => {
-  const { id, name, description } = props;
+  const { id, name, about } = props;
 
   return (
     <>
@@ -12,7 +12,7 @@ export const MiniPortfolio = (props) => {
         <div className="portfolio-item">
           <img src={Photo} alt="" className="photo" />
           <h4 className="name">{name}</h4>
-          <p className="description">{description}</p>
+          <p className="description">{about}</p>
 
           {/* <Link to={`/portfolio/${id}`}>
                 <button className="portfolio-btn">View Portfolio</button>
@@ -21,8 +21,8 @@ export const MiniPortfolio = (props) => {
           <Link
             to={{
               pathname: `/portfolios/${id}`,
-              state: { id: id },
             }}
+            // state = { {idTest: id} }
           >
             <button className="portfolio-btn">
               View Portfolio
