@@ -1,0 +1,11 @@
+.project__container {
+  width: 80%;
+  margin: 1.5rem auto;
+  color: black;
+}
+
+.project__list {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
