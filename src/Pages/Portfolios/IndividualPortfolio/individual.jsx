@@ -40,6 +40,7 @@ export const IndividualPortfolio = () => {
           <>
             <About
               name={portfolio.name}
+              photo={portfolio.photo}
               about={portfolio.about}
               link_github={portfolio.link_github}
               link_linkedin={portfolio.link_linkedin}

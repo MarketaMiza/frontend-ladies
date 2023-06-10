@@ -5,6 +5,10 @@
   color: black;
 }
 
+.skills__title {
+  margin: 1rem 0;
+}
+
 .skills__list {
   width: 100%;
   height: auto;
@@ -14,3 +18,4 @@
   align-items: center;
   justify-content: space-between;
 }
+

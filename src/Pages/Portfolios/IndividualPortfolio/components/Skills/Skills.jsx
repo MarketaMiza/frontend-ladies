@@ -27,7 +27,7 @@ export const Skills = (props) => {
 
   return (
     <section className="skills__container">
-      <h1>Technické dovednosti</h1>
+      <h1 className="skills__title">Technické dovednosti</h1>
 
       <div className="skills__list">
         {technical_skills.map((skill) => {
