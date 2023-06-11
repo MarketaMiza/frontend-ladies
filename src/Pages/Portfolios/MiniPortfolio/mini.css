@@ -1,9 +1,8 @@
-
 .mini-portfolio__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -18,32 +17,33 @@
   font-weight: 600;
   margin-bottom: 1rem;
   color: #074ee8;
+  min-height: 50px;
 }
 
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: auto;
   border-radius: 3px;
-
   padding: 1.25rem;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-  margin: 1.25rem;
+.photo-container {
+  width: 300px;
+  height: 300px;
 }
 
 .photo {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
+  border-radius: 100%;
 }
 
 .portfolio-btn {
@@ -60,4 +60,13 @@
 
 .portfolio-btn:hover {
   background-color: #074ee8;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+          line-clamp: 5;
+  -webkit-box-orient: vertical;
 }

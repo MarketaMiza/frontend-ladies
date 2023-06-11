@@ -1,25 +1,25 @@
 import React from "react";
 import "./Skills.css";
-import { ReactComponent as HtmlIcon } from "../../../../../assets/icons/HTML5.svg";
-import { ReactComponent as CssIcon } from "../../../../../assets/icons/CSS3.svg";
+import { ReactComponent as HtmlIcon } from "../../../../../assets/icons/html.svg";
+import { ReactComponent as CssIcon } from "../../../../../assets/icons/css.svg";
 import { ReactComponent as JsIcon } from "../../../../../assets/icons/js.svg";
-import { ReactComponent as ReactIcon } from "../../../../../assets/icons/React.svg";
-import { ReactComponent as Figma } from "../../../../../assets/icons/figma.svg";
-import { ReactComponent as Git } from "../../../../../assets/icons/git.svg";
-// import { ReactComponent as Github } from "../../../../../assets/icons/github.svg";
-import { ReactComponent as Sass } from "../../../../../assets/icons/sass.svg";
-import { ReactComponent as Bootstrap } from "../../../../../assets/icons/Bootstrap.svg";
+import { ReactComponent as ReactIcon } from "../../../../../assets/icons/react.svg";
+import { ReactComponent as FigmaIcon } from "../../../../../assets/icons/figma.svg";
+import { ReactComponent as GitIcon } from "../../../../../assets/icons/git.svg";
+import { ReactComponent as SassIcon } from "../../../../../assets/icons/sass.svg";
+import { ReactComponent as BootstrapIcon } from "../../../../../assets/icons/bootstrap.svg";
+import { ReactComponent as JqueryIcon } from "../../../../../assets/icons/jquery.svg";
 
 const LogoMap = {
-  html: <HtmlIcon />,
-  css: <CssIcon />,
-  js: <JsIcon />,
-  react: <ReactIcon />,
-  figma: <Figma />,
-  git: <Git />,
-  // github: <Github />,
-  sass: <Sass />,
-  bootstrap: <Bootstrap />,
+  html: <HtmlIcon key="html"/>,
+  css: <CssIcon key="css" />,
+  js: <JsIcon key="js"/>,
+  react: <ReactIcon key="react"/>,
+  figma: <FigmaIcon key="figma"/>,
+  git: <GitIcon key="git"/>,
+  sass: <SassIcon key="sass"/>,
+  bootstrap: <BootstrapIcon key="bootstrap"/>,
+  jquery: <JqueryIcon key="jquery"/>,
 };
 
 export const Skills = (props) => {

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
-// import {MarketaPhoto} from "../../../../../assets/photos/MarketaPhoto.jpg"
 import { createClient } from "@supabase/supabase-js";
 
 export const About = (props) => {
@@ -18,25 +17,24 @@ export const About = (props) => {
       .from("public/photos")
       .download(`./${photo}`)
       .then((response) => {
-        console.log(response.data)
-        if ((response.data)) {
-          const uri = URL.createObjectURL
-          (response.data)
-          
-          setUrl(uri);
-        };
+        console.log(response.data);
+        if (response.data) {
+          const uri = URL.createObjectURL(response.data);
 
-        // console.log(response.data)
+          setUrl(uri);
+        }
       });
   }, []);
 
   return (
-    <div className="about__container">
-      <div className="about__photo">
-        {url ? <img src={url} alt="Marketa" /> : null}
+    <div className="about__container row">
+      <div className="col-3">
+        <div className="about__photo">
+          {url ? <img src={url} alt="Marketa" /> : null}
+        </div>
       </div>
 
-      <div className="about__description">
+      <div className="about__description col-9">
         <div className="about__text">
           <h1>{name}</h1>
           <p>{about}</p>

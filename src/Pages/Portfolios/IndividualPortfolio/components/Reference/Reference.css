@@ -1,22 +1,19 @@
 .reference__container {
-    width: 80%;
+  width: 100%;
   margin: 1rem auto;
-
   color: black;
-
 }
 
 .reference__name {
-    width: 100%;
+  width: 100%;
   height: auto;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  
 }
 
 .reference__text {
-    width: 100%;
+  width: 100%;
   height: auto;
   font-size: 1rem;
   font-weight: 400;

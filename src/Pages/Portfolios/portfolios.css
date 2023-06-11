@@ -1,5 +1,4 @@
-
-.portfolio__container {
+ .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.25rem;
@@ -10,4 +9,4 @@
   height: auto;
 /* smazat pomocny border */
   /* border: 1px solid black;  */
-}
+} 

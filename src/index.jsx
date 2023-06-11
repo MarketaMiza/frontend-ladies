@@ -3,8 +3,11 @@ import React from "react";
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import "bootstrap/dist/css/bootstrap-grid.min.css";
 
-import { HomePage } from "./Pages/HomePage/home";
+
+// import { HomePage } from "./Pages/HomePage/Home";
+import { HomePage } from "./Pages/HomePage/HomePage";
 import { Header } from "./components/Header/header";
 import { Footer } from "./components/Footer/footer";
 import { IndividualPortfolio } from "./Pages/Portfolios/IndividualPortfolio/individual";
