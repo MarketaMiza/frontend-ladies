@@ -43,3 +43,14 @@
 .about__contact a:not(:last-child) {
   margin-right: 1rem;
 }
+
+.about__contact i {
+  font-size: 1.5rem;
+  color: black;
+
+}
+
+.about__contact a {
+  text-decoration: none;
+}
+

@@ -3,6 +3,14 @@ import "./home.css";
 import { Portfolios } from "../Portfolios/portfolios";
 
 export const HomePage = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <article className="article-box">
@@ -29,6 +37,8 @@ export const HomePage = () => {
       <div className="portfolios-box">
         <Portfolios />
       </div>
+      <button className="home-button" onClick={scrollToTop}>
+        <i className="ri-arrow-up-circle-fill"></i></button>
     </>
   );
 };

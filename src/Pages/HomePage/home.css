@@ -12,7 +12,6 @@
   /* border: 2px solid rgb(72, 255, 0); */
   color: var(--text-color);
   position: inherit;
-  z-index: 1000;
   line-height: 1.5;
 }
 
@@ -39,4 +38,22 @@ strong {
   color: #074ee8;
 }
 
+
+.home-button {
+  position: fixed;
+  right: 40px;
+  
+  bottom: 100px;
+
+  background: transparent;
+  border: none;
+}
+
+.home-button i {
+  font-size: 3rem;
+}
+
+.home-button:hover {
+  cursor: pointer;
+}
 

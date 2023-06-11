@@ -41,8 +41,8 @@ export const About = (props) => {
         </div>
 
         <div className="about__contact">
-          <a href={link_github}>GitHub</a>
-          <a href={link_linkedin}>LinkedIn</a>
+          <a href={link_github} target="_blank" rel="noreferrer"><i className="ri-github-fill" ></i></a>
+          <a href={link_linkedin} target="_blank" rel="noreferrer"><i className="ri-linkedin-box-fill" ></i></a>
         </div>
       </div>
     </div>
