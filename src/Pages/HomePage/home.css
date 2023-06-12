@@ -38,13 +38,10 @@ strong {
   color: #074ee8;
 }
 
-
 .home-button {
   position: fixed;
   right: 40px;
-  
   bottom: 100px;
-
   background: transparent;
   border: none;
 }
@@ -56,4 +53,12 @@ strong {
 .home-button:hover {
   cursor: pointer;
 }
+
+.home-button:focus {
+  outline: none;
+}
+
+
+
+
 

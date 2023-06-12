@@ -34,26 +34,38 @@ header {
 
 .header-link {
   display: none;
-
-  color: #171616;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.15rem;
   transition: 0.5s;
   line-height: 2rem;
   opacity: 0.8;
   margin: 0;
+ 
+
 }
 
-.rollout-nav a:hover {
-  cursor: pointer;
+.header-link:hover {
+  opacity: 1;
+  border: 0.1rem solid var(--tertiary-color);
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+.header-link:active {
   opacity: 1;
 }
 
-.nav-closed {
-  display: none;
+.header-link.is-active {
+  opacity: 1;
 }
+
+
+/* .nav-closed {
+  display: none;
+} */
 
 .header-container.is-portfolio .header-link{
   display: block;

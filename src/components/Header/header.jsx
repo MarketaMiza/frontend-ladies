@@ -1,13 +1,11 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./header.css";
+import "./Header.css";
 import Logo from "../../assets/img/logo_02.svg";
 
 export const Header = () => {
   const location = useLocation();
-
   const isPortfolio = location.pathname === "/" ? "" : "is-portfolio";
-
   return (
     <header
       className={[

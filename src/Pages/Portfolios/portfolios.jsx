@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./portfolios.css";
+import "./Portfolios.css";
 import { MiniPortfolio } from "./MiniPortfolio/Mini";
-
-// import { Link } from "react-router-dom";
-
 import { createClient } from "@supabase/supabase-js";
 
 export const Portfolios = () => {
@@ -39,10 +36,9 @@ export const Portfolios = () => {
 
   return (
     <>
-  
-      <section className="portfolio__containe container">
+      <section className="portfolio container">
         <div className="row gy-5">
-        {loading ? <h1>Loading...</h1> : mini_portfolios}
+          {loading ? <h1>Loading...</h1> : mini_portfolios}
         </div>
       </section>
     </>

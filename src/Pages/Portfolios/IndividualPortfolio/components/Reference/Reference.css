@@ -1,21 +1,48 @@
 .reference__container {
   width: 100%;
   margin: 1rem auto;
-  color: black;
+  padding-top: 1rem;
+  border-top: 1px solid var(--quinary-color);
 }
 
 .reference__name {
   width: 100%;
   height: auto;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  margin-left: 1rem;
 }
 
 .reference__text {
   width: 100%;
   height: auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .reference__container {
+    width: 90%;
+    margin: 1.4rem;
+  }
+  .reference__name {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .reference__text {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .reference__container .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

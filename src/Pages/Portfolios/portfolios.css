@@ -2,11 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.25rem;
-
   margin: 0 auto;
-
   width: 80%;
   height: auto;
-/* smazat pomocny border */
-  /* border: 1px solid black;  */
 } 
+

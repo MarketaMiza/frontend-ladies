@@ -1,11 +1,35 @@
 .project__container {
   width: 100%;
   margin: 1.5rem auto;
-  color: black;
+  padding-top: 1rem;
+  border-top: 1px solid var(--quinary-color);
 }
 
 .project__list {
   width: 100%;
   height: auto;
   margin-top: 1rem;
+}
+
+.project__link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.project__link:hover {
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .project__container {
+    width: 90%;
+    margin: 1.4rem;
+    color: var(--primary-color);
+    
+  }
+  .project__list {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
 }

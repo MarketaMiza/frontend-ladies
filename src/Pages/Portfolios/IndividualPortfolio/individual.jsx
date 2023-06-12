@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./individual.css";
+import "./Individual.css";
 import { useParams } from "react-router-dom";
 import { createClient } from "@supabase/supabase-js";
-// components / about
-import { About } from "./components/About/about.jsx";
+import { About } from "./components/About/About";
 import { Skills } from "./components/Skills/Skills";
 import { Project } from "./components/Project/Project";
 import { Reference } from "./components/Reference/Reference";
@@ -26,9 +25,8 @@ export const IndividualPortfolio = () => {
         );
       });
   }, []);
-console.log(portfolio)
+  
   return (
-    
     <>
       <section className="individual__container container">
         {portfolio ? (

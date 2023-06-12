@@ -1,4 +1,12 @@
-.individual_container {
+.individual__container {
   color: black;
+
+}
+
+@media screen and (max-width: 768px) {
+  .individual__container .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 

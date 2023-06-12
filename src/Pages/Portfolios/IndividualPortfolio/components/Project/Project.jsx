@@ -9,7 +9,7 @@ export const Project = (props) => {
       <h1>Moje práce</h1>
 
       <div className="project__list">
-        <a href={project_link}>{project_name}</a>
+        <a className="projec__link" href={project_link}>{project_name}</a>
         <p>{project_description}</p>
       </div>
     </section>

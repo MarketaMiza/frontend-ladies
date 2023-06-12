@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./about.css";
+import "./About.css";
 import { createClient } from "@supabase/supabase-js";
 
 export const About = (props) => {

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { createClient } from "@supabase/supabase-js";
 import { Link } from "react-router-dom";
-import "./mini.css";
+import "./Mini.css";
 import Placeholder from "./img/logo.jpg";
 
 export const MiniPortfolio = (props) => {
@@ -20,7 +20,6 @@ export const MiniPortfolio = (props) => {
       .from("public/photos")
       .download(`./${photo}`)
       .then((response) => {
-        console.log(response.data);
         if (response.data) {
           const uri = URL.createObjectURL(response.data);
 

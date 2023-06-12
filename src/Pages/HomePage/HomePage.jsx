@@ -1,6 +1,6 @@
 import React from "react";
-import "./home.css";
-import { Portfolios } from "../Portfolios/portfolios";
+import "./Home.css";
+import { Portfolios } from "../Portfolios/Portfolios";
 
 export const HomePage = () => {
 

@@ -1,8 +1,19 @@
 /* normalize css */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Lobster&family=Rajdhani:wght@700&display=swap");
 
-/* colors, line heights a dalsi casto pouzivane, opakujici se nastaveni */
+/* primary - font - black*/
+/* secondary and tertiary - btn, a, i - hover - dark blue and dark pink. magenta...*/
 
+/* quaternary and quinary - lines, borders light blue */
+
+:root {
+
+  --primary-color: hsl(0, 3%, 8%);
+  --secondary-color: hsl(221, 94%, 47%);
+  --tertiary-color: hsl(285, 81%, 55%);
+  --quaternary-color: hsl(285, 100%, 94%);
+  --quinary-color: hsl(221, 100%, 94%);
+}
 
 *,
 *::before,
@@ -17,32 +28,22 @@ html {
   font-size: 100%;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-
   --scroll-behavior: smooth;
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
 }
 
 body {
-
+  color: var(--primary-color);
   font-family: "Fira Code", monospace;
   margin: 0;
   overflow: hidden;
   overflow-y: auto;
-  /* background-image: url(../img_main/background.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
  
 }
-
-/* 
-img {
-  border-style: none;
-  max-width: 100%;
-  height: auto;
-}  */
-
 
 h1,
 h2,
@@ -69,9 +70,9 @@ figure {
   margin: 0;
 }
 
-
 .main-box {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
