@@ -43,7 +43,6 @@ header {
   line-height: 2rem;
   opacity: 0.8;
   margin: 0;
- 
 
 }
 
@@ -62,12 +61,48 @@ header {
   opacity: 1;
 }
 
-
-/* .nav-closed {
-  display: none;
-} */
-
 .header-container.is-portfolio .header-link{
   display: block;
   
+}
+
+.header-container.is-portfolio .header-link.is-active {
+  border: 0.1rem solid var(--tertiary-color);
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+.header-link-pic {
+  display: none;
+}
+
+.header-link-pic i {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--secondary-color);
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-logo_container {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-container.is-portfolio .header-link {
+    display: none;
+  } 
+
+  .header-container.is-portfolio .header-link-pic {
+    display: block;
+    text-decoration: none;
+  }
+
 }

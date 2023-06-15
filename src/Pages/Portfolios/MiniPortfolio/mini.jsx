@@ -1,14 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { Link } from "react-router-dom";
 import "./Mini.css";
 import Placeholder from "./img/logo.jpg";
 
 export const MiniPortfolio = (props) => {
-  const { id,photo, name, about } = props;
+  const { id, photo, name, about } = props;
 
-
- const [url, setUrl] = useState();
+  const [url, setUrl] = useState();
 
   useEffect(() => {
     const supabase = createClient(
@@ -30,27 +29,24 @@ export const MiniPortfolio = (props) => {
 
   return (
     <>
-     <div className="col-xl-4 col-md-6 p-2">
-        <div className="portfolio-item">
-          <div className="photo-container">
-          <img src={url ? url : Placeholder} alt="" className="photo" />
+      <div className="col-xl-4 col-md-6 p-2">
+        <Link
+          to={{
+            pathname: `/portfolios/${id}`,
+          }}
+        
+        >
+          <div className="portfolio-item">
+            <div className="photo-container">
+              <img src={url ? url : Placeholder} alt="" className="photo" />
             </div>
-          <h4 className="name">{name}</h4>
-          <p className="description">{about}</p>
+            <h4 className="name">{name}</h4>
+            <p className="description">{about}</p>
 
-          <Link
-            to={{
-              pathname: `/portfolios/${id}`,
-            }}
-            // state = { {idTest: id} }
-          >
-            <button className="portfolio-btn">
-              Více o mně
-            </button>
-          </Link>
-        </div>
-        </div>
-    
+            <button className="portfolio-btn">Více o mně</button>
+          </div>
+        </Link>
+      </div>
     </>
   );
 };

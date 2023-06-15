@@ -9,6 +9,9 @@ import { ReactComponent as GitIcon } from "../../../../../assets/icons/git.svg";
 import { ReactComponent as SassIcon } from "../../../../../assets/icons/sass.svg";
 import { ReactComponent as BootstrapIcon } from "../../../../../assets/icons/bootstrap.svg";
 import { ReactComponent as JqueryIcon } from "../../../../../assets/icons/jquery.svg";
+import { ReactComponent as Sql } from "../../../../../assets/icons/sql.svg";
+import { ReactComponent as Mjml } from "../../../../../assets/icons/mjml.svg";
+
 
 const LogoMap = {
   html: <HtmlIcon key="html"/>,
@@ -20,6 +23,8 @@ const LogoMap = {
   sass: <SassIcon key="sass"/>,
   bootstrap: <BootstrapIcon key="bootstrap"/>,
   jquery: <JqueryIcon key="jquery"/>,
+  sql: <Sql key="sql"/>,
+  mjml: <Mjml key="mjml"/>
 };
 
 export const Skills = (props) => {

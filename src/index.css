@@ -76,3 +76,8 @@ figure {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+ 
+}

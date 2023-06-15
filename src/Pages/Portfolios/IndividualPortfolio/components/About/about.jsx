@@ -3,7 +3,7 @@ import "./About.css";
 import { createClient } from "@supabase/supabase-js";
 
 export const About = (props) => {
-  console.log(props);
+ 
   const { photo, name, about, link_github, link_linkedin } = props;
   const [url, setUrl] = useState();
 
@@ -17,7 +17,6 @@ export const About = (props) => {
       .from("public/photos")
       .download(`./${photo}`)
       .then((response) => {
-        console.log(response.data);
         if (response.data) {
           const uri = URL.createObjectURL(response.data);
 
@@ -30,7 +29,7 @@ export const About = (props) => {
     <div className="about__container row">
       <div className="col-3">
         <div className="about__photo">
-          {url ? <img src={url} alt="Marketa" /> : null}
+          {url ? <img src={url} alt="photo" /> : null}
         </div>
       </div>
 

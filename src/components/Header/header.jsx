@@ -23,6 +23,11 @@ export const Header = () => {
       <Link className="header-link" to="/">
         portfolia
       </Link>
+
+      <Link className="header-link-pic" to="/">
+     
+      <i className="ri-arrow-left-circle-fill"></i>
+      </Link>
     </header>
   );
 };
