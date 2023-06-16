@@ -8,20 +8,16 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
-  /* border: 2px solid rgb(72, 255, 0); */
   color: var(--text-color);
   position: inherit;
   line-height: 1.5;
 }
 
-/* nadpis O projektu... */
 .box-title {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-/* text o projektu */
 .text {
   width: 100%;
   height: auto;
@@ -44,6 +40,8 @@ strong {
   bottom: 100px;
   background: transparent;
   border: none;
+  color: var(--secondary-color);
+
 }
 
 .home-button i {

@@ -31,15 +31,15 @@ export const MiniPortfolio = (props) => {
     <>
       <div className="col-xl-4 col-md-6 p-2">
         <Link
+          target="blank"
           to={{
             pathname: `/portfolios/${id}`,
           }}
-        
         >
           <div className="portfolio-item">
-            <div className="photo-container">
+            <figure className="photo-container">
               <img src={url ? url : Placeholder} alt="" className="photo" />
-            </div>
+            </figure>
             <h4 className="name">{name}</h4>
             <p className="description">{about}</p>
 
