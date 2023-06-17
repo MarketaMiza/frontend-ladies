@@ -30,11 +30,12 @@ export const MiniPortfolio = (props) => {
   return (
     <>
       <div className="col-xl-4 col-md-6 p-2">
+        {/* make the link open in new window */}
         <Link
-          target="blank"
           to={{
             pathname: `/portfolios/${id}`,
           }}
+          
         >
           <div className="portfolio-item">
             <figure className="photo-container">
