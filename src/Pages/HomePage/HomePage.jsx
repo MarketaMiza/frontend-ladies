@@ -39,7 +39,6 @@ export const HomePage = () => {
       </div>
       <button className="home-button" onClick={scrollToTop}>
         <i className="ri-arrow-up-circle-fill"></i></button>
-      
     </>
   );
 };

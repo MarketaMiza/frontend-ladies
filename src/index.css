@@ -3,9 +3,11 @@
 
 /* primary - font - black*/
 /* secondary and tertiary - btn, a, i - hover - dark blue and dark pink. magenta...*/
+
 /* quaternary and quinary - lines, borders light blue */
 
 :root {
+
   --primary-color: hsl(0, 3%, 8%);
   --secondary-color: hsl(221, 94%, 47%);
   --tertiary-color: hsl(285, 81%, 55%);
@@ -40,6 +42,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+ 
 }
 
 h1,
@@ -76,4 +79,5 @@ figure {
 a {
   text-decoration: none;
   color: var(--primary-color);
+ 
 }
