@@ -16,8 +16,11 @@
   color: var(--primary-color);
 }
 
-.project__link:hover {
+/* active link for hover and active animation */
+.project__link:hover,
+.project__link:active {
   color: var(--secondary-color);
+  animation: linkAnimation 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -25,7 +28,6 @@
     width: 90%;
     margin: 1.4rem;
     color: var(--primary-color);
-    
   }
   .project__list {
     width: 100%;

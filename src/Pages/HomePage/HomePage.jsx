@@ -1,15 +1,15 @@
 import React from "react";
 import "./Home.css";
 import { Portfolios } from "../Portfolios/Portfolios";
+import { ScrollTopArrow } from "../../components/ScrollTopArrow/ScrollTopArrow";
 
 export const HomePage = () => {
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <>
@@ -37,8 +37,8 @@ export const HomePage = () => {
       <div className="portfolios-box">
         <Portfolios />
       </div>
-      <button className="home-button" onClick={scrollToTop}>
-        <i className="ri-arrow-up-circle-fill"></i></button>
+
+      <ScrollTopArrow />
     </>
   );
 };

@@ -3,16 +3,17 @@
 
 /* primary - font - black*/
 /* secondary and tertiary - btn, a, i - hover - dark blue and dark pink. magenta...*/
-
 /* quaternary and quinary - lines, borders light blue */
 
 :root {
 
   --primary-color: hsl(0, 3%, 8%);
+
   --secondary-color: hsl(221, 94%, 47%);
   --tertiary-color: hsl(285, 81%, 55%);
   --quaternary-color: hsl(285, 100%, 94%);
   --quinary-color: hsl(221, 100%, 94%);
+  --btn-text-color: hsl(0, 0%, 100%);
 }
 
 *,
@@ -52,17 +53,17 @@ h3 {
   line-height: 1;
 }
 
-h2 {
-  font-size: clamp(1.75rem, 8vw, 2.5rem);
+h1, h2 {
+  font-size: clamp(1.2rem, 8vw, 2.2rem);
 }
 
 h3 {
-  font-size: clamp(1.75rem, 10vw, 3.5rem);
+  font-size: clamp(1.1rem, 6vw, 2rem);
   line-height: 1;
 }
 
 h4 {
-  font-size: clamp(1.1rem, 10vw, 2.5rem);
+  font-size: clamp(.75rem, 4vw, 1.5rem);
   line-height: 1;
 }
 

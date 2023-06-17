@@ -21,6 +21,7 @@
 .text {
   width: 100%;
   height: auto;
+  margin-bottom: 1.75rem;
 }
 
 .text p {
@@ -31,8 +32,9 @@
 }
 
 strong {
-  color: #074ee8;
+  color: var(--secondary-color);
 }
+
 
 .home-button {
   position: fixed;
@@ -41,6 +43,9 @@ strong {
   background: transparent;
   border: none;
   color: var(--secondary-color);
+  transition:  all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 100;
 
 }
 
@@ -54,6 +59,18 @@ strong {
 
 .home-button:focus {
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .article-box {
+    width: 90%;
+  }
+
+  .home-button {
+    right: 20px;
+    bottom: 20px;
+  }
+
 }
 
 

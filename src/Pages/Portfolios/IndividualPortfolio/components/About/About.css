@@ -4,7 +4,7 @@
 
 .about__photo {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 3px;
   overflow: hidden;
@@ -15,6 +15,13 @@
   height: 80%;
   object-fit: cover;
 }
+
+.about__description {
+  font-size: 1rem;
+  font-weight: 400;
+margin: 0;
+}
+
 
 .about__text {
   width: 100%;
@@ -33,7 +40,7 @@
 
 .about__contact i {
   font-size: 1.75rem;
-  color: black;
+  color: var(--primary-color);
 }
 
 .about__contact a {

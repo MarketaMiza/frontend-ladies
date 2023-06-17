@@ -29,13 +29,13 @@ export const About = (props) => {
     <div className="about__container row">
       <div className="col-3">
         <div className="about__photo">
-          {url ? <img src={url} alt="photo" /> : null}
+          {url ? <img src={url} alt="" /> : null}
         </div>
       </div>
 
       <div className="about__description col-9">
         <div className="about__text">
-          <h1>{name}</h1>
+          <h1 className="about__name">{name}</h1>
           <p>{about}</p>
         </div>
 
