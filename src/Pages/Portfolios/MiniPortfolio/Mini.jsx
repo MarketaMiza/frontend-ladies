@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 import "./Mini.css";
 import Placeholder from "./img/logo.jpg";
 
@@ -30,8 +30,9 @@ export const MiniPortfolio = (props) => {
   return (
     <>
       <div className="col-xl-4 col-md-6 p-2">
+        <ScrollRestoration />
         <Link
-          target="_blank"
+          // target="_blank"
           to={{
             pathname: `/portfolios/${id}`,
           }}

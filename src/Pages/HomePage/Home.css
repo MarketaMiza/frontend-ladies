@@ -36,19 +36,6 @@ strong {
 }
 
 
-.home-button {
-  position: fixed;
-  right: 40px;
-  bottom: 100px;
-  background: transparent;
-  border: none;
-  color: var(--secondary-color);
-  transition:  all 0.3s ease-in-out;
-  cursor: pointer;
-  z-index: 100;
-
-}
-
 .home-button i {
   font-size: 3rem;
 }

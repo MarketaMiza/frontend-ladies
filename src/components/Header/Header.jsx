@@ -1,11 +1,17 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
 import Logo from "../../assets/img/logo_02.svg";
 
 export const Header = () => {
   const location = useLocation();
   const isPortfolio = location.pathname === "/" ? "" : "is-portfolio";
+
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate(-1);
+  };
+
   return (
     <header
       className={[
@@ -24,10 +30,10 @@ export const Header = () => {
         portfolia
       </Link>
 
-      <Link className="header-link-pic" to="/">
+      <div className="header-link-pic" onClick={handleNavigate}>
      
       <i className="ri-arrow-left-circle-fill"></i>
-      </Link>
+      </div>
     </header>
   );
 };
