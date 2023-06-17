@@ -13,6 +13,8 @@ import { ReactComponent as Sql } from "../../../../../assets/icons/sql.svg";
 import { ReactComponent as Mjml } from "../../../../../assets/icons/mjml.svg";
 
 
+
+
 const LogoMap = {
   html: <HtmlIcon key="html"/>,
   css: <CssIcon key="css" />,

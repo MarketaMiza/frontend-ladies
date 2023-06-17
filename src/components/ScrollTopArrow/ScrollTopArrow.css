@@ -10,7 +10,7 @@
   cursor: pointer;
   animation: fadeIn 0.3s;
   transition: opacity 0.4s;
-  opacity: 0.5;
+  opacity: 0.75;
   color: var(--secondary-color);
   background: transparent;
   border: none;
@@ -20,6 +20,8 @@
 
 .scrollTop:hover {
   opacity: 1;
+  color: var(--tertiary-color);
+
 }
 
 @keyframes fadeIn {
@@ -27,6 +29,31 @@
     opacity: 0;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.75;
   }
 }
+
+@media (max-width: 768px) {
+  .scrollTop {
+    width: 15%;
+    bottom: 80px;
+    right: -10px;
+    height: 20px;
+  
+  }
+}
+
+@media (max-width: 576px) {
+  .scrollTop {
+    width: 20%;
+    bottom: 60px;
+    right: -10px;
+    height: 20px;
+   
+  }
+  .scrollTop:hover {
+    opacity: 1;
+  }
+}
+
+
