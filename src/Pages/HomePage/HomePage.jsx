@@ -12,17 +12,20 @@ export const HomePage = () => {
 
           <p>
             <strong>
-              Web, který pomůže propojit firmy a nové juniorní frontend
-              vývojářky.
+              Web, který pomáhá propojit nové juniorní frontend vývojářky a
+              firmy hledající nové talentované kolegyně.
             </strong>
             <br />
-            Samy víme, jak je těžké sebrat odvahu a poslat CV na naši vysněnou
-            pozici v IT - máme obavu, že toho ještě moc neumíme a tak se jen
-            učíme a hledání práce odkládáme. Budeme rádi, pokud se nám podaří
-            web zpropagovat ve firmách spolupracujících s Czechitas, které tak
-            budou mít možnost podívat se na portfolia jednotlivých absolventek
-            digitálních akademií a sami je oslovit s nabídkou práce a pozvat na
-            pohovor.
+            Web Frontend Ladies je místem, kde najdete portfolia absolventek
+            Czechitas - Digitální akademie, které se rozhodly pro práci v IT.
+            Oslovte začínající vývojářky, pozvěte je na pohovor a obohaťte tak
+            své týmy o nadějné vývojářky!
+            <p>
+              Tento projekt vznikl jako závěrečná práce Markéty, která je
+              absolventkou Digitální akademie: Web, a která si dala za cíl
+              vytvořit projekt, který pomůže absolventkám najít novou práci v
+              IT.
+            </p>
           </p>
         </div>
       </article>

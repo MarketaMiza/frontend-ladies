@@ -25,13 +25,12 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 4px 4px 13px rgba(0, 0, 0, .2);
-  margin: .5rem;
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem;
 }
 
 .portfolio-item:hover {
-  box-shadow: 4px 4px 13px rgba(0, 0, 0, .4);
-
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.4);
 }
 
 .photo-container {
@@ -63,7 +62,6 @@
 
 .portfolio-btn:hover {
   background-color: var(--secondary-color);
-
 }
 
 .description {
@@ -71,13 +69,12 @@
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 5;
-          line-clamp: 5;
+  line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
 @media screen and (max-width: 768px) {
- .p-2 {
-  margin: 0;
- }
-  
+  .p-2 {
+    margin: 0;
+  }
 }

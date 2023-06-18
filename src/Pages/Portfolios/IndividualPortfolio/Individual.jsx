@@ -25,7 +25,7 @@ export const IndividualPortfolio = () => {
         );
       });
   }, []);
-  
+
   return (
     <>
       <section className="individual__container container">
