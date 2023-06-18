@@ -11,6 +11,8 @@ import { ReactComponent as BootstrapIcon } from "../../../../../assets/icons/boo
 import { ReactComponent as JqueryIcon } from "../../../../../assets/icons/jquery.svg";
 import { ReactComponent as Sql } from "../../../../../assets/icons/sql.svg";
 import { ReactComponent as Mjml } from "../../../../../assets/icons/mjml.svg";
+import { ReactComponent as Photoshop } from "../../../../../assets/icons/photoshop.svg";
+import { ReactComponent as Nextjs } from "../../../../../assets/icons/nextjs.svg";  
 
 
 
@@ -26,7 +28,9 @@ const LogoMap = {
   bootstrap: <BootstrapIcon key="bootstrap"/>,
   jquery: <JqueryIcon key="jquery"/>,
   sql: <Sql key="sql"/>,
-  mjml: <Mjml key="mjml"/>
+  mjml: <Mjml key="mjml"/>,
+  photoshop : <Photoshop key="photoshop"/>,
+  nextjs : <Nextjs key="nextjs"/>,
 };
 
 export const Skills = (props) => {
