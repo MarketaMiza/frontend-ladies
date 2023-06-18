@@ -1,18 +1,24 @@
-.footer-title,
-.footer-text,
-.footer-contact,
-.footer-link {
-  font-size: 100%;
+.footer-container.row {
+ 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0;
+
+  border: 1px solid black;
 }
+
+.footer-title {
+  color: var(--secondary-color);
+}
+
 
 .footer-text {
   text-align: center;
-}
+} 
 
-.footer-contact
- {
+.footer-contact {
   text-align: right;
-}
+} 
 
 .footer-contact a,
 .footer-link {

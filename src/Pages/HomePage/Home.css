@@ -31,6 +31,19 @@ strong {
   font-size: 1.15rem;
 }
 
+.article-contact {
+  color: var(--secondary-color);
+  font-size: 1.15rem;
+}
+
+.article-contact:hover {
+  color: var(--tertiary-color);
+}
+
+.article-contact:active {
+  color: var(--tertiary-color);
+}
+
 @media (max-width: 768px) {
   .article-box {
     width: 90%;

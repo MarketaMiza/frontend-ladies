@@ -90,12 +90,10 @@ a {
 }
 
 p {
-  font-size: clamp(0.75rem, 4vw, 1rem);
-  line-height: 1.5;
-  font-weight: 400;
-  margin: 0.5rem;
+  line-height: 1.4;
+  font-weight: 300;
 }
 
 br {
-  margin-bottom: 1rem;
+  margin-bottom: .75rem;
 }

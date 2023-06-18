@@ -12,20 +12,19 @@ export const HomePage = () => {
 
           <p>
             <strong>
-              Web, který pomáhá propojit nové juniorní frontend vývojářky a
+              Web, který pomáhá propojit juniorní frontend vývojářky a
               firmy hledající nové talentované kolegyně.
             </strong>
             <br />
             Web Frontend Ladies je místem, kde najdete portfolia absolventek
             Czechitas - Digitální akademie, které se rozhodly pro práci v IT.
             Oslovte začínající vývojářky, pozvěte je na pohovor a obohaťte tak
-            své týmy o nadějné vývojářky!
-            <p>
-              Tento projekt vznikl jako závěrečná práce Markéty, která je
-              absolventkou Digitální akademie: Web, a která si dala za cíl
-              vytvořit projekt, který pomůže absolventkám najít novou práci v
-              IT.
-            </p>
+            své týmy o výborné kolegyně! 
+            <br />
+            Tento projekt vznikl jako závěrečná
+            práce <a className="article-contact" href="https://frontend-ladies.netlify.app/portfolios/1" target="blank">Markéty</a>, která je absolventkou Digitální akademie: Web, a
+            která si dala za cíl vytvořit projekt, který pomůže absolventkám
+            najít novou práci v IT. 
           </p>
         </div>
       </article>
