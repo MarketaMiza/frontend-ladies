@@ -11,7 +11,8 @@ export const Footer = () => {
         <p className="footer-text col-4">© 2023 Markéta Mížová</p>
         <p className="footer-link col-4">
           <a href="http://www.linkedin.com/in/m-mizova" target="blank">
-            Kontakt</a>
+            Kontakt
+          </a>
         </p>
       </div>
     </footer>

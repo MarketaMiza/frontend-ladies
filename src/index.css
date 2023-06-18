@@ -6,9 +6,8 @@
 /* quaternary and quinary - lines, borders light blue */
 
 :root {
-
+  --background-color: hsl(0, 0%, 100%);
   --primary-color: hsl(0, 3%, 8%);
-
   --secondary-color: hsl(221, 94%, 47%);
   --tertiary-color: hsl(285, 81%, 55%);
   --quaternary-color: hsl(285, 100%, 94%);
@@ -43,7 +42,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
- 
 }
 
 h1,
@@ -53,7 +51,8 @@ h3 {
   line-height: 1;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: clamp(1.2rem, 8vw, 2.2rem);
 }
 
@@ -63,7 +62,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(.75rem, 4vw, 1.5rem);
+  font-size: clamp(0.75rem, 4vw, 1.5rem);
   line-height: 1;
 }
 
@@ -80,5 +79,12 @@ figure {
 a {
   text-decoration: none;
   color: var(--primary-color);
- 
 }
+
+@media (min-width: 1650px) {
+  .main-box {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+

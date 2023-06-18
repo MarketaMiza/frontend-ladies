@@ -4,13 +4,6 @@ import { Portfolios } from "../Portfolios/Portfolios";
 import { ScrollTopArrow } from "../../components/ScrollTopArrow/ScrollTopArrow";
 
 export const HomePage = () => {
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
-
   return (
     <>
       <article className="article-box">

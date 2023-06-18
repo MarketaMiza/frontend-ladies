@@ -3,6 +3,7 @@
   margin: 1rem auto;
   padding-top: 1rem;
   border-top: 1px solid var(--quinary-color);
+  border-bottom: 1px solid var(--quinary-color);
 }
 
 .reference__name {
@@ -10,7 +11,7 @@
   height: auto;
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;  
+  margin-bottom: 1.5rem;  
 }
 
 .reference__text {

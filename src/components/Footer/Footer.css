@@ -11,20 +11,19 @@
 }
 
 .footer-link {
- text-align: right;
+  text-align: right;
 }
 
 .footer-link a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1rem;
   font-weight: 400;
 }
 
 .footer-link a:hover,
 .footer-link a:active {
-  color: var(--secondary-color);
-  animation: linkAnimation 0.5s ease-in-out;
+  color: var(--tertiary-color);
 }
 
 .footer-container {

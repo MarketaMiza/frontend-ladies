@@ -2,26 +2,28 @@
   width: 100%;
   margin: 1.5rem auto;
   padding-top: 1rem;
-  border-top: 1px solid var(--quinary-color);
+  border-bottom: 1px solid var(--quinary-color);
 }
 
 .project__list {
   width: 100%;
   height: auto;
   margin-top: 1rem;
+  margin-bottom: 1.5rem;  
 }
 
 .project__link {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1.5rem;
   font-weight: 900;
+  transition: all 0.3s ease-in-out;
+
 }
 
-/* active link for hover and active animation */
 .project__link:hover,
 .project__link:active {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   animation: linkAnimation 0.5s ease-in-out;
 }
 

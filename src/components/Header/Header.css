@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Lobster&family=Rajdhani:wght@700&display=swap");
-
 header {
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,8 +7,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: white;
-
 }
 
 .site-logo_container {
@@ -21,11 +18,10 @@ header {
 
 .header-title {
   font-size: clamp(1.75rem, 8vw, 2.5rem);
-  font-weight: var(--font-semi-bold);
+  font-weight: 400;
   margin: 0;
 }
 
-/* LOGO  */
 .logo {
   width: 3.5rem;
   height: 3.5rem;
@@ -63,7 +59,6 @@ header {
 
 .header-container.is-portfolio .header-link{
   display: block;
-  
 }
 
 .header-container.is-portfolio .header-link.is-active {
