@@ -1,5 +1,5 @@
 .article-box {
-  width: 80%;
+  width: 90%;
   height: auto;
 
   display: flex;
@@ -46,6 +46,8 @@ strong {
 
 @media (max-width: 768px) {
   .article-box {
-    width: 90%;
+    width: 80%;
   }
 }
+
+

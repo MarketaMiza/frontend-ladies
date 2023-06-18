@@ -54,7 +54,6 @@ h3 {
 h1,
 h2 {
   font-size: clamp(1.2rem, 8vw, 2.2rem);
-  /* margin-bottom: .5rem; */
 }
 
 h3 {
@@ -84,10 +83,19 @@ a {
 
 @media (min-width: 1650px) {
   .main-box {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
+
 }
+
+/* @media (max-width: 768px) {
+  .main-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+} */
+
 
 p {
   line-height: 1.4;
